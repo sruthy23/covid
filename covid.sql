@@ -14,10 +14,6 @@ WHERE continent IS NOT NULL
 ORDER BY 3,4;
 
 
-DELETE FROM covid..covid_deaths WHERE date > '2021-12-31'; 
-
-DELETE FROM covid..covid_vaccinations WHERE date > '2021-12-31'; 
-
 
 SELECT Location, date, total_cases, new_cases, total_deaths, population
 FROM covid..covid_deaths
